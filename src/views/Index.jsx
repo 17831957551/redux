@@ -1,5 +1,4 @@
 export function Index() {
-
     return (
         <div style={{
             width: "400px",
