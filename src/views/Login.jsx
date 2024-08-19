@@ -73,7 +73,7 @@ export function Login() {
                     width: '400px',
                     flexWrap: 'wrap',
                     textAlign: 'center',
-                    fontSize: '12px',
+                    fontSize: '12px'
                 }}>
                     <p style={{ color: '#ccc' }}>认证服务由中国移动提供</p>
                     <p style={{ color: '#ccc' }}>登录代表同意用户协议、隐私政策并授权使用您的账号信息(如昵称、头像、地址)以便您统一管理。</p>
