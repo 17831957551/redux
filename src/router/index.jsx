@@ -19,7 +19,4 @@ const router = [
         element: '404页面'
     }
 ]
-router.forEach(()=> {
-    
-})
 export default router
