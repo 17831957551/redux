@@ -5,21 +5,18 @@ export function Login() {
     const navigate = useNavigate()
     const [form] = Form.useForm()
     const [messageApi, contextHolder] = message.useMessage()
-
     async function handleSubmit(e) {
         let res = await getUser(e)
         if (res.length) {
             navigate('/Index')
-            localStorage.setItem("userInfo", JSON.stringify(res[0]))
+            localStorage.setItem("token", 'userInfo')
         } else {
             form.resetFields()
-            messageApi.error('用户名或密码错误')
+            messageApi.error('用户名或密码错误');
         }
     }
     return (
-        <div style={{
-            // background: 'url("/2.webp") no-repeat',
-        }}>
+        <div>
             {contextHolder}
             <div style={{
                 width: '400px',

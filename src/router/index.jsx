@@ -7,10 +7,19 @@ const router = [
         element: <Login />
     },
     {
+        path: '/login',
+        element: <Login />
+    },
+    {
         path: '/index',
         element: <Index />
+    },
+    {
+        path: '*',
+        element: '404页面'
     }
 ]
-
-
+router.forEach(()=> {
+    
+})
 export default router
